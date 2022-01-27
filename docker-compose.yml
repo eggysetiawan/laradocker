@@ -44,6 +44,7 @@ services:
     container_name: php
     volumes:
         - ./src:/var/www/html
+        - ./php/custom.ini:/usr/local/etc/php/conf.d/custom.ini
     ports:
         - "9000:9000"
     networks:
